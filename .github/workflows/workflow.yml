@@ -1,0 +1,23 @@
+name: backend-workflow
+on:
+  workflow_dispatch: # Execute on manual trigger
+  pull_request:
+  push:
+    branches:
+      - main # Execute on every push
+
+jobs:
+  my-job:
+    name: bun
+    runs-on: ubuntu-latest
+    steps:
+      # ...
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          version: "latest"
+      # run any `bun` or `bunx` command
+      - run: bun install
+      - run: bunx biome format
+      - run: bunx biome lint
+      
