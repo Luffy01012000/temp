@@ -7,12 +7,17 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"include": ["scripts/**/*.js", "src/**/*.js","src/**/*.ts","scripts/**/*.ts"],
+		"include": [
+			"scripts/**/*.js",
+			"src/**/*.js",
+			"src/**/*.ts",
+			"scripts/**/*.ts"
+		],
 		"ignore": ["biome.json"]
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"		
+		"indentStyle": "tab"
 	},
 	"organizeImports": {
 		"enabled": true
@@ -26,7 +31,6 @@
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "double"
-			
 		}
 	}
 }
