@@ -1,6 +1,6 @@
 import { ApolloServer } from "@apollo/server";
 import { expressMiddleware } from "@apollo/server/express4";
-import cors from "cors";
+import cors from " cors";
 import express, {
 	json,
 	urlencoded,
